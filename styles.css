@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: grey;
+}
+
+#game-container {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.card.open, .card.matched {
+    background-color: #fff;
+    transform: none;
+}
+
+.card.matched {
+    background-color: #8BC34A;
+    cursor: default;
+}
+
+.card.hidden {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#timer, #score {
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#play-again {
+    background-color: blue;
+    color: white;
+}
+
+input {
+    font-size: 1.2em;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#message {
+    font-size: 1.2em;
+    color: red;
+    margin-top: 20px;
+}

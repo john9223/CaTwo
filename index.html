@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Matching Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="intro">
+            <h1>Card Matching Game</h1>
+            <p>The cards will be hidden after 30 seconds. Try to memorize their positions!</p>
+            <label for="player-name">Enter your name:</label>
+            <input type="text" id="player-name" placeholder="Your Name">
+            <button id="start-game">Start Game</button>
+        </div>
+        <div id="game" class="hidden">
+            <div id="timer">Time: 0</div>
+            <div id="cards-container"></div>
+            <div id="score">Score: 0</div>
+            <div id="message" class="hidden">Now it's time to match!</div>
+        </div>
+        <div id="game-over" class="hidden">
+            <h2>Game Over</h2>
+            <p id="final-score"></p>
+            <button id="play-again">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
